@@ -1,0 +1,2 @@
+Is grad ok: True
+Forward diff: 0.0
