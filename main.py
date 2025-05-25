@@ -19,7 +19,7 @@ class Config:
 
 
 if __name__ == '__main__':
-    """
+
     torch_norm = nn.RMSNorm([2, 3])
     my_norm = RMSNorm((2, 3))
 
@@ -31,8 +31,7 @@ if __name__ == '__main__':
     with open("results/task_1.txt", 'w') as f:
         f.write(f'Sum diff: {torch.sum(abs(torch_res - my_res))}\n')
         f.write(f'Max diff: {torch.max(abs(torch_res - my_res))}')
-    """
-    """
+
     x = torch.randn(5, requires_grad=True, dtype=torch.double)
     y = torch.randn(5, requires_grad=True, dtype=torch.double)
 
@@ -42,7 +41,7 @@ if __name__ == '__main__':
     with open("results/task_2.txt", 'w') as f:
         f.write(f'Is grad ok: {gradcheck(MyAutoGrad.apply, (x, y))}\n')
         f.write(f'Forward diff: {torch.max(abs(my_res_t2 - must_be))}')
-    """
+
     train_df = pd.read_csv('data/loan_train.csv')
     test_df = pd.read_csv('data/loan_test.csv')
 
